@@ -7,7 +7,13 @@ public class ArrayList {
             if (count == 0) {
                 candid = num;
             }
-            count += (num == candid) ? 1 : -1;
+
+            if (num == candid) {
+                count += 1;
+            } else {
+                count -= 1;
+            }
+
         }
         return candid;
     }
